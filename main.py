@@ -14,7 +14,7 @@ with open("authentication.yaml", "r", encoding="utf8") as stream:
     yaml_data = yaml.safe_load(stream)
 
 intents = hikari.Intents.ALL
-test_guilds = (660135595250810881, 948311226159624254, 958754866153537586)
+test_guilds = (851112293475680257, 708143295783501905, 992504066842296400)
 
 async def determine_prefix(bot, message):
     try:
@@ -28,7 +28,7 @@ async def determine_prefix(bot, message):
         return default_prefix
 
 
-default_prefix = ';'
+default_prefix = '-'
 
 
 class Yuna(lightbulb.BotApp, ABC):
